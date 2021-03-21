@@ -17,3 +17,6 @@ Built to allow me to easily keep track of internships that I apply to.
 * Automatically keeps track of the current row that you're at after each session.
 * Auto-completion for positions that are most commonly used.
 * Automatically fills in your Google Sheets based on what you input.
+
+## License
+MIT License (c) 2021 Brian Lam
