@@ -10,21 +10,13 @@ creds = ServiceAccountCredentials.from_json_keyfile_name('./config/client_secret
 client = gspread.authorize(creds)
 sheet = client.open("Internships").sheet1
 
-auto = [
-    'SWE Intern', 'Geronimo', 'Tecumseh', 'Pontiac', 
-    'Red Cloud', 'Crazy Horse', 'Cochise', 'Red Jacket', 
-    'Red Czar', 'Red Czechoslovakian']
-
 autoData = []
 data = {}
 with open("./config/auto.json") as f:
     data = json.load(f)
-    print(data)
 
-print(data["SWE Intern"])
 autoData = [(-value, key) for key, value in data.items()]
 hp.heapify(autoData)
-print(autoData)
 class Application():
     
     def __init__(self):
