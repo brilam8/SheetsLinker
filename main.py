@@ -25,7 +25,6 @@ class Application():
         self.create_widgets()
 
     def create_widgets(self):
-        print("creating widgets...")
         window = tk.Tk()
         window.title("Sheet Linker")
         window.columnconfigure(0, weight=1, minsize=300)
@@ -70,7 +69,6 @@ class Application():
         
         def handle_apply(event):
             global autoData
-            print("APPLIED")
             if (nameEntry.get().strip() == "" or titleEntry.get().strip() == "" or linkEntry.get().strip() == "" or dateAppEntry.get().strip() == ""):
                 print("A field is empty")
             else:
