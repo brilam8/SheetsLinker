@@ -42,7 +42,6 @@ class Application():
         nameEntry = tk.Entry(font=('Ubuntu', 12), textvariable=nameText)
         nameEntry.grid(row=2, column=0, sticky="new", padx=(50, 50))
 
-
         pos = tk.Label(text="Position")
         titleEntry = tk.Entry(font=('Ubuntu', 12), textvariable=auto)
         pos.grid(row=3, column=0, sticky="sew", padx=(50, 50))
@@ -110,7 +109,7 @@ class Application():
             for item in autoData:
                 if item[1].lower().startswith(got.lower()):
                     hits.append(item[1])
-            return hits    
+            return hits
 
         def get_typed(event):
             if len(event.keysym) == 1:
@@ -137,10 +136,5 @@ class Application():
         button.bind("<Button-1>", handle_apply)
 
         window.mainloop()
-
-        
-
-    
-        
 
 Application()
