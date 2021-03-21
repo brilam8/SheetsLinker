@@ -1,5 +1,4 @@
 # Secrets
-*.json
 client_secret.json
 
 # Byte-compiled / optimized / DLL files

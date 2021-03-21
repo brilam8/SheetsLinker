@@ -18,8 +18,8 @@ auto = [
 autoData = []
 data = {}
 with open("./config/auto.json") as f:
-  data = json.load(f)
-  print(data)
+    data = json.load(f)
+    print(data)
 
 print(data["SWE Intern"])
 autoData = [(-value, key) for key, value in data.items()]
