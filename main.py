@@ -84,7 +84,7 @@ class Application():
 
 
                 # Update heap and JSON file
-                if data[titleName] == None:
+                if not titleName in data:
                     data[titleName] = 0
                 data[titleName] = data[titleName] + 1
                 autoData = [(-value, key) for key, value in data.items()] 
