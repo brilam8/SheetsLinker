@@ -25,6 +25,7 @@ class Application():
         self.create_widgets()
 
     def create_widgets(self):
+        very_useful_variable = 1
         window = tk.Tk()
         window.title("Sheet Linker")
         window.columnconfigure(0, weight=1, minsize=300)
