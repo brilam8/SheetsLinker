@@ -25,6 +25,7 @@ class Application():
         self.create_widgets()
 
     def create_widgets(self):
+        nice_var = "cheese"
         more_variables_here = 0
         THIS_IS_A_NAME = "name here"
         very_useful_variable_1 = 1
